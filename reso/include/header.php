@@ -16,7 +16,7 @@
       <li class="navItem">
         <a href="#skills" class="navLink">Skills</a>
       </li>
-      <li class="navItem"><a href="#work" class="navLink">Work</a></li>
+      <li class="navItem"><a href="#work" class="navLink">Explore work</a></li>
       <li class="navItem"><a href="#knowledge" class="navLink">Knowledge sharing</a></li>
 
       <li class="navItem">
