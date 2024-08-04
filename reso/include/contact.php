@@ -1,8 +1,26 @@
 <section class="contact section" id="contact">
         <h2 class="sectionTitle">Contact</h2>
 
+        <?php
+                    if(!empty($_POST ["Send"])){
+                        $name = $_POST ["name"];
+                        $email = $_POST ["email"];
+                        $message = $_POST ["message"];
+                        $toEmail = "skchamith14@gmail.com";
+
+                        $mailHeaders = "Name: " . $name .
+                        "\r\n Email: " . $email .
+                        "\r\n Message: " . $message . "\r\n ";
+
+                        if(mail($toEmail, $name, $mailHeaders)){
+                            $messageDisplay = "Your Infomation is Received Successfully. ";
+                        }
+
+                    }
+         ?>
+
         <div class="contactContainer bdGrid">
-          <form action="connect.php" method="post" class="contactForm">
+          <form action="" method="post" class="contactForm">
             <input
               type="text"
               placeholder="Name"
@@ -18,20 +36,25 @@
               name="email"
             />
             <textarea
-              name=""
               placeholder="Your message"
               id=""
               cols="0"
               rows="10"
               class="contactInput"
+              name="message"
             ></textarea>
             <input
               type="submit"
               value="Send"
               class="contactButton button"
               id="message"
-              name="message"
+              name="Send"
             />
+            <?php if(!empty($messageDisplay)) {?>
+                 <div class="success">
+                  <strong style="color:green;"><?php echo $messageDisplay; ?></strong>
+                  </div>
+            <?php }?>
           </form>
 
           <!-- <table class="contactForm">

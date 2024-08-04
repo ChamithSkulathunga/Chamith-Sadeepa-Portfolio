@@ -16,7 +16,7 @@
               </a>
           </div> -->
 
-          <div class="home-project-grid-div display-none"><a href="#" class="home-project-link-block w-inline-block" >
+          <div class="home-project-grid-div display-none"><a href="workMain.php/#Electrik" class="home-project-link-block w-inline-block" >
                 <div class="home-project-image"><img src="reso\img\works\General_Electrik_web.png" loading="lazy" sizes="(max-width: 767px) 92vw, (max-width: 991px) 91vw, 100vw" " alt="" class="home-project-image"></div>
                 
                 <div class="home-project-title-section">

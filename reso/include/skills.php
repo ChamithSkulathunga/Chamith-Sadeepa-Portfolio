@@ -48,6 +48,16 @@
                 <span class="skillsPercentage">85%</span>
               </div>
             </div>
+            <div class="skillsData">
+              <div class="skillsNames">
+                <i class="bx bxl-react skillsIcon"></i>
+                <span class="skillsName">React</span>
+              </div>
+              <div class="skillsBar skillsReact"></div>
+              <div>
+                <span class="skillsPercentage">85%</span>
+              </div>
+            </div>
           </div>
 
           <div>
