@@ -11,9 +11,12 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 98.4;
-  --first-color: hsl(var(--hue-color), 2%, 70%);
-  --second-color: hsl(var(--hue-color), 86%, 5%);
+  /* --hue-color: 98.4; */
+  --hue-color: 344;
+  /* --first-color: hsl(var(--hue-color), 10%, 60%); */
+  --first-color: hsl(var(--hue-color), 15%, 57%);
+  
+  --second-color: hsl(var(--hue-color), 86%, 2%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 1.8rem;
@@ -54,6 +57,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-color: #EDF7F6;
 }
 
 h1, h2, p {
@@ -296,7 +300,7 @@ img {
 }
 
 /* Apply animation to the class */
-.homeTitleColor , .colourChange {
+.homeTitleColor , .colourChange   {
   animation: colorChange 5s infinite; /* 5s duration, infinite loop */
   transition: color 0.5s ease; /* Ensures smooth transition */
 }
@@ -643,6 +647,8 @@ table tr {
   .contactContainer {
     justify-items: center;
   }
+
+  
 }
 
 @media screen and (min-width: 768px) {
