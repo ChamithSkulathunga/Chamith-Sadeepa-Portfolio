@@ -13,8 +13,8 @@
   /* HSL color mode */
   /* --hue-color: 98.4; */
   --hue-color: 344;
-  /* --first-color: hsl(var(--hue-color), 10%, 60%); */
-  --first-color: hsl(var(--hue-color), 15%, 57%);
+  --first-color: hsl(var(--hue-color), 50%, 50%);
+  /* --first-color: hsl(var(--hue-color), 15%, 57%); */
   
   --second-color: hsl(var(--hue-color), 86%, 2%);
   /*===== Fuente y tipografia =====*/
@@ -152,7 +152,7 @@
   30% {-webkit-transform: scale(0.5); opacity: 1;}
   100% {opacity: 0; -webkit-transform: scale(1.5);}
 }
- */
+ 
 
 
 
@@ -351,6 +351,7 @@ img {
 .navLink {
   position: relative;
   color: #fff;
+  
 }
 
 .navLink:hover {
