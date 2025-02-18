@@ -25,17 +25,17 @@
         <div class="navMenu" id="navmenu">
           <ul class="navList">
             <li class="navItem">
-              <a href="#home" class="navLink activeLink">Home</a>
+              <a href="#home" class="navLink activeLink" > <p style="text-transform: uppercase;">Home</p></a>
             </li>
             <!-- <li class="navItem"><a href="#about" class="navLink">About</a></li> -->
             <li class="navItem">
-              <a href="#skills" class="navLink">Skills</a>
+              <a href="#skills" class="navLink"><p style="text-transform: uppercase;">Skills</p></a>
             </li>
-            <li class="navItem"><a href="#work" class="navLink">Explore work</a></li>
-            <li class="navItem"><a href="#knowledge" class="navLink">Knowledge sharing</a></li>
+            <li class="navItem"><a href="#work" class="navLink"><p style="text-transform: uppercase;">Explore work</p></a></li>
+            <li class="navItem"><a href="#knowledge" class="navLink"><p style="text-transform: uppercase;">Knowledge sharing</p></a></li>
       
             <li class="navItem">
-              <a href="#contact" class="navLink">Contact</a>
+              <a href="#contact" class="navLink"><p style="text-transform: uppercase;">Contact</p></a>
             </li>
           </ul>
           <div style="margin-right:20px; position:fixed; Top:100px; right:20px;">
@@ -71,7 +71,7 @@
           <h1 class="homeTitle" style="padding-top: 0px;">
             Hi I'm <span class="homeTitleColor">Chamith</span></h1>
             
-            <p class="aboutMe">I am an undergraduate student with a solid grasp of various programming languages, aiming to become a Web Developer. Passionate about self-directed learning, I continuously acquire new skills and stay updated with industry trends to create innovative web experiences</p><br>
+            <p class="aboutMe" style="font-weight: 200; text-align: justify;">I am an undergraduate student with a solid grasp of various programming languages, aiming to become a Web Developer. Passionate about self-directed learning, I continuously acquire new skills and stay updated with industry trends to create innovative web experiences</p><br>
           
           <div class="">
 
@@ -89,18 +89,21 @@
           <a href="https://www.linkedin.com/in/chamith-sadeepa-kulathunga-702348196/"
             target="_blank"
             class="homeSocialIcon"
+            style="color: #0077B5;"
             ><i class="bx bxl-linkedin"></i
           ></a>
           <a
             href="https://www.behance.net/chamithsadeepa1"
             target="_blank"
             class="homeSocialIcon"
+            style="color: #053eff;"
             ><i class="bx bxl-behance"></i
           ></a>
           <a
             href="https://github.com/ChamithSkulathunga"
             target="_blank"
             class="homeSocialIcon"
+            style="color: #4078c0;"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
@@ -475,8 +478,8 @@
                     }
          ?>
 
-        <div class="contactContainer bdGrid">
-          <form action="" method="post" class="contactForm">
+        <!-- <div class="contactContainer bdGrid">
+          <form action="https://formsubmit.co/skchamith14@gmail" method="post" class="contactForm">
             <input
               type="text"
               placeholder="Name"
@@ -512,27 +515,46 @@
                   </div>
             <?php }?>
           </form>
+          
+        </div> -->
 
-          <!-- <table class="contactForm">
-            <tr>
-              <th>Full Name</th>
-              <td>: S.K. Chamith Sadeepa Kulathunga</td>
-            </tr>
-            <tr>
-              <th>Address</th>
-              <td>: 274/A Bogashandiya, arlaganwila.</td>
-            </tr>
-            <tr>
-              <th>Emai</th>
-              <td>: skchamith14@gmail.com</td>
-            </tr>
-            <tr>
-              <th>Mobile</th>
-              <td>: 076 7217480</td>
-            </tr>
-          </table> -->
+        <div class="contactContainer bdGrid">
+          <form action="https://formsubmit.co/skchamith14@gmail.com" method="POST" class="contactForm">
+            <input type="text" placeholder="Name" class="contactInput" id="name" name="name" required />
+            <input type="email" placeholder="Email" class="contactInput" id="email" name="email" required />
+            <textarea placeholder="Your message" cols="0" rows="10" class="contactInput" name="message" required></textarea>
+            <input type="submit" value="Send" class="contactButton button" id="message" name="Send" />
+            <p id="status" class="successMessage"></p>
+          </form>
         </div>
+        
       </section>
+      <!-- <form action="https://formsubmit.co/skchamith14@gmail" method="POST">
+        <input type="hidden" name="_subject" value="New Feedback!">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form> -->
+      
+      <!-- <table class="contactForm">
+        <tr>
+          <th>Full Name</th>
+          <td>: S.K. Chamith Sadeepa Kulathunga</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>: 274/A Bogashandiya, arlaganwila.</td>
+        </tr>
+        <tr>
+          <th>Emai</th>
+          <td>: skchamith14@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Mobile</th>
+          <td>: 076 7217480</td>
+        </tr>
+      </table> -->
 
 
    
